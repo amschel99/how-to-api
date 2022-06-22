@@ -37,6 +37,8 @@ res.status(500).send("Internal server error" +error)
 
 //Enough with with registering users, Lets login some
 
+
+
 const login=  async (req, res)=>{
 try{
 
@@ -44,6 +46,7 @@ try{
     const userExists= await usersModel.findOne({email:req.body.email})
     if(!userExists){
         return res.status(400).send("user was not found")
+
     }
 const passwordMatch= await bcrypt.compare(req.body.password, userExists.password)
 if(!passwordMatch){
@@ -68,9 +71,11 @@ process.env.REFRESH_TOKEN_SECRET, {
 );
 
 //save the refresh token in the database
+userExists["refreshToken"]=refreshToken
+await usersModel.findByIdAndUpdate({_id:userExists._id},userExists)
 
-userExists.refreshToken=refreshToken
-console.log(userExists)
+
+
 //send accessToken and refresh Token
 //refresh token as a cookie, accessToken as a response
 

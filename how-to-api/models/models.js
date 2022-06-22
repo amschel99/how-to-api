@@ -26,7 +26,8 @@ password:{
    
 },
 refreshToken:{
-    type:String
+    type:String,
+    default:''
 }
 
 
