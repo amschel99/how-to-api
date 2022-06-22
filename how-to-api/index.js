@@ -7,6 +7,8 @@ const app= express()
 const router= require("./routes/route")
 const protectedRoutes= require("./routes/protectedRoutes")
 const refreshRoute= require("./routes/refresh")
+const verifyJwt=require("./middleware/verifyJwt")
+const logout= require("./routes/logout")
 
 
 
@@ -19,15 +21,11 @@ app.use(cookieParser())
 
 app.use("/api/v1/users", router)//login and register routes
 app.use("/refresh", refreshRoute)
+app.use("/logout", logout)
+app.use(verifyJwt)
+app.use("/resources", protectedRoutes)//protected routes
 
-app.use("resources", protectedRoutes)//protected routes
 
-
-app.get("/", (req, res)=>{
-
-res.send("hello my people")
-
-})
 
 
 const start= async  ()=>{
