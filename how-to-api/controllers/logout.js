@@ -13,7 +13,7 @@ const refresh=cookies.jwt
     const userExists= await usersModel.findOne({refreshToken:refresh})//look for a user with that refresh Token
 console.log(userExists)
     if(!userExists){
-    res.clearCookie("jwt",{httpOnly:true})
+    res.clearCookie("jwt",{httpOnly:true, sameSite:"None", secure:true})
     res.sendStatus(204)
     }
 //delete refresh token in the database

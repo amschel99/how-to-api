@@ -79,7 +79,7 @@ await usersModel.findByIdAndUpdate({_id:userExists._id},userExists)
 //send accessToken and refresh Token
 //refresh token as a cookie, accessToken as a response
 
-res.cookie("jwt", refreshToken,{httpOnly:true, maxAge:24*60*60*1000})
+res.cookie("jwt", refreshToken,{httpOnly:true, sameSite:'None', secure:true, maxAge:24*60*60*1000})
 res.send({accessToken})
     //if it exists compare the password given and the one stored in the database, If they do not match, send an error
     //If the password matches and the use 
