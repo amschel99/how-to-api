@@ -4,7 +4,7 @@ const registerSchema= joi.object({
 name:joi.string().max(20).required(),
 
 email: joi.string()
-        .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }),
+        .email({ minDomainSegments: 2, tlds: { allow: ['com', 'net','org', 'me', 'live'] } }),
 
 password: joi.string()
         .pattern(new RegExp(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$/)),

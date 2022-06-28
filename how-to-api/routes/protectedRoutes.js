@@ -2,7 +2,19 @@
 const express= require("express")
 const router= express.Router()
 
-router.route("/ebooks").get((req,res)=>{
-    res.send("this route is protected, you can upload an ebook and make your profile")
+router.route("/").get((req,res)=>{
+   res.json(
+    [{
+name:"peanut butter"
+
+    },
+{
+    name:"melon juice"
+},
+{
+    name:"sugarcane juice"
+}
+]
+   )
 })
 module.exports= router

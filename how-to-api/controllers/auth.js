@@ -24,7 +24,7 @@ try{
     //Check if the user exists in the database
     const userExists= await usersModel.findOne({email:req.body.email})
     if(userExists!==null){
-        return res.send("user already exists" )
+        return res.status(409).send("user already exists" )
     }
 
    const succesful= await usersModel.create(req.body)
