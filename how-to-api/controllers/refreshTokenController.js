@@ -6,7 +6,7 @@ require("dotenv").config()
 try{
     const cookies=req.cookies
     if(!cookies?.jwt) return res.status(401);
-    console.log(cookies.jwt)
+    console.log( ' hello' + cookies.jwt)
 
 
 
@@ -25,7 +25,9 @@ if(err || userExists.name!==decoded.userName){
 
     return res.status(403).send(err +decoded.userName +userExists.userName)
 }
+userName=decoded.userName
 const accessToken= jwt.sign({"userName":decoded.userName}, process.env.ACCESS_TOKEN_SECRET, {expiresIn:'7m'})
+console.log("hello" +accessToken)
  res.json({accessToken})
     })
 

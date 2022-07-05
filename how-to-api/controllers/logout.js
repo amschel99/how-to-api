@@ -25,7 +25,7 @@ res.sendStatus(204)
 }
 
     catch(error){
-        res.status(500).send("there was an error")
+        res.send("there was an error")
     }
 
 
