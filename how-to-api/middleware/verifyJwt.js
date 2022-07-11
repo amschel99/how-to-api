@@ -12,7 +12,7 @@ jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (error, decoded)=>{
     if(error){
         return res.status(403).send("forbidden")
     }
-    req.user=decoded.userName
+    req.user=decoded._id
 next()
 }) 
 }

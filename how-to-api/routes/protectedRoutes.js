@@ -1,20 +1,7 @@
 
 const express= require("express")
 const router= express.Router()
+const {makeAnOrder}= require("../controllers/orders.js")
 
-router.route("/").get((req,res)=>{
-   res.json(
-    [{
-name:"peanut butter"
-
-    },
-{
-    name:"melon juice"
-},
-{
-    name:"sugarcane juice"
-}
-]
-   )
-})
+router.route('/').post(makeAnOrder)
 module.exports= router
