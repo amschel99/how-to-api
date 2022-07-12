@@ -55,7 +55,7 @@ if(!passwordMatch){
 
 //assign the access 
 const accessToken= jwt.sign(
-{"userName":userExists.name},
+{"_id":userExists._id},
 process.env.ACCESS_TOKEN_SECRET, {
     expiresIn:'7m'
 }
@@ -64,7 +64,7 @@ process.env.ACCESS_TOKEN_SECRET, {
 //CREATE THE REFRESH TOKEN
 
 const refreshToken= jwt.sign(
-{"userName":userExists.name},
+{"_id":userExists._id},
 process.env.REFRESH_TOKEN_SECRET, {
     expiresIn:'7d'
 }

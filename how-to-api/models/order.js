@@ -18,7 +18,7 @@ type:String
     required:true
    },
    user:{
-    type:String,
+    type:mongoose.ObjectId,
     required:true
    }
 }

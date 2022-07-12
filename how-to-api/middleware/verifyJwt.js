@@ -13,7 +13,8 @@ jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (error, decoded)=>{
         return res.status(403).send("forbidden")
     }
     req.user=decoded._id
-next()
+    console.log(req.user)
+  next()
 }) 
 }
 module.exports= verifyJwt
