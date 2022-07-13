@@ -6,9 +6,11 @@ const makeAnOrder= async (req, res, next)=>{
     try{
         const user= req.user
         req.body.user=user
-        console.log(req.body.user)
+        
         const order= await orderModel.create(req.body)
         console.log(order)
+        const {price}= req.body
+        //handle the payments here using the price
         return res.status(201).json({message:"order sent succesfully", order})
 
     }

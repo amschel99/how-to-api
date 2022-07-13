@@ -7,6 +7,7 @@ const cors= require("cors")
 const app= express()
 const router= require("./routes/route")
 const protectedRoutes= require("./routes/protectedRoutes")
+const products= require("./routes/products")
 const refreshRoute= require("./routes/refresh")
 const verifyJwt=require("./middleware/verifyJwt")
 const logout= require("./routes/logout")
@@ -24,7 +25,7 @@ app.use(express.json())
 //middleWare for cookies
 app.use(cookieParser())
 
-
+app.use("/products", products)
 app.use("/api/v1/users", router)//login and register routes
 app.use("/refresh", refreshRoute)
 app.use("/logout", logout)
