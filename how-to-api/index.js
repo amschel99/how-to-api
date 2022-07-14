@@ -8,6 +8,7 @@ const app= express()
 const router= require("./routes/route")
 const protectedRoutes= require("./routes/protectedRoutes")
 const products= require("./routes/products")
+const user= require("./routes/user")
 const refreshRoute= require("./routes/refresh")
 const verifyJwt=require("./middleware/verifyJwt")
 const logout= require("./routes/logout")
@@ -30,7 +31,8 @@ app.use("/api/v1/users", router)//login and register routes
 app.use("/refresh", refreshRoute)
 app.use("/logout", logout)
 app.use(verifyJwt)
-app.use("/orders", protectedRoutes)//protected routes
+app.use("/order", protectedRoutes)//protected routes
+app.use("/user", user)
 
 
 
