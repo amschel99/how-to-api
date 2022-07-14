@@ -4,7 +4,7 @@ const orderSchema= new mongoose.Schema(
 {
    products:
 [{
-type:String
+type: mongoose.SchemaTypes.Mixed
 }]
    ,
    price:{
