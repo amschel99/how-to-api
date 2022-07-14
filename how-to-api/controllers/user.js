@@ -4,8 +4,8 @@ const getUser= async (req, res)=>{
 
     try{
         user=req.user
-     const {name} =  await userModel.find({_id:user})
-   return  res.status(200).json({message:"success", data:name})
+     const userExists=  await userModel.find({_id:user})
+   return  res.status(200).json({message:"success", data:userExists})
 
     }
     catch(error){
