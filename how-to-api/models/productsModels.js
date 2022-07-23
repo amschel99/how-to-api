@@ -7,6 +7,7 @@ const productsSchema= new mongoose.Schema(
             trim:true
       
         },
+
         price:{
             type:Number,
             required:[true, "a product must have a price"]
@@ -15,28 +16,25 @@ const productsSchema= new mongoose.Schema(
             type:String,
             required:[true, " a product must have an Image"]
         },
-        quantity:{
-            type:Number,
-            required:[true, "specify the quantity please"]
-        },
+       
         available:{
             type:Boolean,
             required:[true, "specify if the product is available please"]
         },
-        size:{
-            type:String,
-            enum:["small","medium", "large"],
-            default:"medium"
-        },
-   rating:{
+     
+   ratings:{
 type:Number,
 required:[true, "how many people rated this product?"],
 default:0
-
+        },
+        averageRating:{
+            type:Number,
+            default:5
 
         },
+
         productType:{
-            enum:["Tshirt", "Hoodie", "Cap", "Cup", "Pants"]
+            enum:["clothes", "laptops", "phones", "watches", "kitchenWare", "Jewellery"]
         }
 
 
