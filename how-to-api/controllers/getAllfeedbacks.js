@@ -1,16 +1,16 @@
 const feedbackModel= require("../models/feedback.js")
 
 
-const submitFeedback= async (req, res, next)=>{
+const getAllfeedbacks= async (req, res, next)=>{
 
     try{
    
         
-        const feedback= await feedbackModel.create(req.body)
+        const feedback= await feedbackModel.find({})
         console.log(feedback)
      
         //handle the payments here using the price
-        return res.status(201).json({message:"thank you! feedback submitted", feedback})
+        return res.status(200).json({message:"feedback queried", feedback})
 
     }
     catch(error){
@@ -18,4 +18,4 @@ return res.status(500).send(`there was an error ${error.message}`)
 
     }
 }
-module.exports= {submitFeedback}
+module.exports= {getAllfeedbacks}

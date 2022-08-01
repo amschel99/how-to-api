@@ -31,6 +31,8 @@ app.use("/products", products)
 app.use("/api/v1/users", router)//login and register routes
 app.use("/refresh", refreshRoute)
 app.use("/logout", logout)
+//submit feedback
+app.use("/feedback",feedback)
 
 app.use(verifyJwt)
 app.use("/order", protectedRoutes)//protected routes
