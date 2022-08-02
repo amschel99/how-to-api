@@ -22,19 +22,28 @@ const productsSchema= new mongoose.Schema(
             required:[true, "specify if the product is available please"]
         },
      
-   ratings:{
-type:Number,
-required:[true, "how many people rated this product?"],
-default:0
+  
+
+      brand:{
+        type:String,
+            enum:["hp","lenovo","acer","dell","acer","ssd"],
+         
         },
-        averageRating:{
-            type:Number,
-            default:5
+        description:{
+            type:String,
+            required:[true, "please provide a detailed description"]
 
         },
-
-        productType:{
-            enum:["clothes", "laptops", "phones", "watches", "kitchenWare", "Jewellery"]
+        ram:{
+            type:String,
+            enum:["4gb","8gb", "16gb"],
+           
+        },
+        disk:{
+            enum:["ssd","hdd"]
+        },
+        os:{
+            enum:["windows","mac","chrome"]
         }
 
 

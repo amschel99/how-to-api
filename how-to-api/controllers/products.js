@@ -3,12 +3,32 @@ const productsModel= require("../models/productsModels.js")
 const getAllProducts= async (req, res)=>{
 
     try{
-          const {name,sort, fields}=req.query
+          const {name,sort, fields,brand,ram,os,disk}=req.query
            const queryObject={}
            if(name){
         //the foreign expression below is for pattern matching where all strings matching with the name query are returned. options i is for ignoring thre caps or small
 
         queryObject.name={$regex:name, $options:"i"}
+    }
+     if(brand){
+      
+
+        queryObject.brand=brand
+    }
+     if(ram){
+      
+
+        queryObject.ram=ram
+    }
+    if(os){
+      
+
+        queryObject.os=os
+    }
+    if(disk){
+      
+
+        queryObject.disk=disk
     }
     let result=  productsModel.find(queryObject)
     if(fields){
@@ -27,6 +47,7 @@ const getAllProducts= async (req, res)=>{
         // if there is no sort specified, just sort them by date of creation
         result=result.sort("name")
     }
+    
 
     //pagination functionality 
     const page= Number(req.query.page) || 1 //its the first page or whatever page they want
@@ -36,9 +57,11 @@ const getAllProducts= async (req, res)=>{
 
 
 
-    
+ 
       product = await result
-      return res.status(200).json({message:"success",data:product})
+  const pages=Math.floor(9/limit)
+  
+      return res.status(200).json({message:"success",data:product,pages})
 
 
     }

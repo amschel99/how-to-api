@@ -12,7 +12,7 @@ const user= require("./routes/user")
 const refreshRoute= require("./routes/refresh")
 const verifyJwt=require("./middleware/verifyJwt")
 const logout= require("./routes/logout")
-const feedback=require("./routes/feedback")
+
 const credentials= require("./middleware/credentials")
 const cors0ptions= require("./config/options")
 
@@ -32,7 +32,7 @@ app.use("/api/v1/users", router)//login and register routes
 app.use("/refresh", refreshRoute)
 app.use("/logout", logout)
 //submit feedback
-app.use("/feedback",feedback)
+
 
 app.use(verifyJwt)
 app.use("/order", protectedRoutes)//protected routes

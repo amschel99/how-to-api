@@ -1,74 +1,133 @@
 [
   {
-    "name": "Graffiti beach Shirt",
-    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/31/675033/1.jpg?3261",
-    "price": 800,
-    "quantity": 100,
+    "name": "HP Refurbished Chromebook",
+    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/00/959176/1.jpg?3688",
+    "price": 12000,
+    
     "available": true,
    
-    "productType": "clothes"
-  },
-  {
-    "name": "Mickey's house Hoodie ",
-    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/39/289782/1.jpg?8679",
-    "price": 1200,
-    "quantity": 100,
-    "available": true,
-   
-    "productType": "clothes"
-  },
-  {
-    "name": "Fashion  T-Shirt",
-    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/36/280146/1.jpg?2998",
-    "price": 1000,
-    "quantity": 100,
-    "available": true,
-   
-    "productType": "clothes"
-  },
-  {
-    "name": "Reggae Hoodie",
-    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/77/536272/1.jpg?6875",
-    "price": 1500,
-    "quantity": 100,
-    "available": true,
-   
-    "productType": "clothes"
-  },
-  {
-    "name": "Branded Tshirt",
-    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/90/908774/1.jpg?3079",
-    "price": 500,
-    "quantity": 100,
-    "available": true,
+   "brand":"hp",
+   "os":"chrome",
+   "disk":"hdd",
+   "ram":"4gb",
+   "description":"TOUCHSCREEN ENABLED CHROMEBOOK  Elevate learning in and out of the classroom and empower students to think critically and work collaboratively with the HP Chromebook 11 EE. It is ready for class with interactive tools and a rugged design that includes co-molded rubber edges;It gets high marks for durabilityBe prepared for daily bumps and dings with co-molded rubber edges and a keyboard resistant to minor spills in a Chromebook™ that is designed to pass MIL-STD 810G testing.1Simplify deploymentsSpeed, simplicity, security, and easy sharing are core subjects for the Chrome OS™, a low-maintenance, highly-manageable platform with automatic software updates and virus protection."
 
-    "productType": "clothes"
   },
   {
-    "name": "Trendy Tshirt",
-    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/73/092684/1.jpg?2797",
-    "price": 700,
-    "quantity": 100,
+    "name": "Lenovo Refurbished Thinkpad",
+    "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/00/093476/1.jpg?3028",
+    "price": 13999,
+    
     "available": true,
    
-    "productType": "clothes"
-  },
-  {
-    "name": "Love Africa Hoodie",
-    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/56/964983/1.jpg?2828",
-    "price": 1200,
-    "quantity": 100,
-    "available": true,
-  
-    "productType": "clothes"
-  },
-  {
-    "name": "Anime Is Life",
-    "image": "https://m.media-amazon.com/images/I/81iDfZsk8NL._AC_UL320_.jpg",
-    "price": 1000,
-    "quantity": 100,
-    "available": true,
+   "brand":"lenovo",
+   "os":"windows",
+   "disk":"hdd",
+   "ram":"4gb",
+   "description":"The ThinkPad X131e 11.6 Notebook Computer from Lenovo takes the no-nonsense, business-oriented side of Lenovo ThinkPad notebooks and adds a touch of personality for customer-facing roles in small- to medium-sized businesses. The result is a slimmed down 11.6 notebook computer that weighs just 3.92 pounds. This Lenovo notebook is also wrapped in a refined, soft matte coating with an understated black finish.The 11.6 HD widescreen display features LED backlight technology, which use less power and are more energy efficient than their CCFL counterparts. The screen has a 16:9 aspect ratio and a 1366 x 768 native resolution powered by integrated AMD Radeon HD 7310 graphics. The resolution can also play 720p HD content natively without upscaling. The screen also has an antiglare finish, which allows it to be used in brightly lit environments.The system is powered by a dual-core 1.4GHz AMD E1-1200 accelerated processor. It also has 2GB of 1600MHz DDR3 RAM, a 320GB 7200rpm hard drive, a 4-in-1 media card reader, 10/100/1000Mbps Gigabit Ethernet, 802.11b/g/n Wi-Fi, Bluetooth 4.0, an integrated webcam and microphone. Windows 7 Professional (64-bit) is the installed operating system."
 
-    "productType": "clothes"
+  },
+  {
+    "name": "HP EliteBook 820 G3",
+    "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/84/041417/1.jpg?5810",
+    "price": 29999,
+    
+    "available": true,
+   
+   "brand":"hp",
+   "os":"windows",
+   "disk":"hdd",
+   "ram":"8gb",
+   "description":"Processor Intel® Core™ i5-6300U with Intel HD Graphics 520 (2.5 GHz, up to 3.1 GHz with Intel Turbo Boost Technology, 4 MB cache, 4 CPU cores) Chipset Chipset is integrated with processor Memory 8 GB DDR3 Up to 32 GB DDR3-2133 SDRAM Transfer rates up to 2133 MT/s. SODIMM slots are customer accessible/upgradeable. Supports dual channel memory. Internal Storage 500GB HDD Display HP Sure View integrated privacy screen 35.56 cm(12.6) diagonal FHD SVA slim LED-backlit non-touch with camera (1366 x 768)Graphics Integrated: Intel® HD Graphics 520"
+
+  },
+   {
+    "name": "DELL Latitude E7440 Refurbished",
+    "image": "https://ke.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/76/505617/1.jpg?1458",
+    "price": 28900,
+    
+    "available": true,
+   
+   "brand":"dell",
+   "os":"windows",
+   "disk":"hdd",
+   "ram":"8gb",
+   "description":"Intel Core 17-4600U quad-core processor 2.2GHz Turbo frequency of 3.3GHz 14-inch, 1366*768 resolution pixel display Windows 10 Pro operating system Platinum Grey colour HB Webcam, Mini display port, USB 3.0, HDMI port 500GB HDD, 4GB RAM Conclusion Enhance your business performance with this Dell Latitude E7440 Ultrabook. It's sleek and attractive in design and made of a sturdy carbon fibre that gives it a soft touch. It is durable and comes with an ergonomic and comfortable keyboard. Additionally, it has great processing power, i7-4600U with, a 2.1GHz speed which, can be clocked up to 3.3GHz thanks to the Turbo Boost. It has a sufficient storage capacity of 500 HDD and a fast Ram of 8GB. It is readily available at our Nairobi Computer Shop, the best computer dealers in Nairobi at a favourable price."
+
+  },
+  {
+    "name": "Lenovo Ideapad 3 ",
+    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/66/849766/1.jpg?3104",
+    "price": 38499,
+    
+    "available": true,
+   
+   "brand":"lenovo",
+   "os":"windows",
+   "disk":"hdd",
+   "ram":"8gb",
+   "description":"4 HD TN System Processor: Intel Celeron Graphics: Intel UHD Graphics 600 Operating System: Windows 11 Storage & Memory 128GB SSD + 1TB HDD RAM: 4GB Inputs & Outputs1x USB 2.01x card reader2x USB 3.2 Gen 11x HDMI 1.4b1x headphone / microphone combo jack (3.5mm)1x power connector4-in-1 card reader (SD, SDHC, SDXC)Connectivity 802.11ac 2x2 Wi-Fi + Bluetooth 5.0, M.2 Card"
+
+  },
+   {
+    "name": "Acer Chromebook",
+    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/66/849766/1.jpg?3104",
+    "price": 13299,
+    
+    "available": true,
+   
+   "brand":"acer",
+   "os":"chrome",
+   "disk":"hdd",
+   "ram":"4gb",
+   "description":"Built-in dual band Wi-Fi 802.11 a/b/g/n Intel Celeron 2955U 1.4 GHz (Haswell micro-architecture) Can open/edit MS Office files using free embedded QuickOffice editor or Google Docs, and can download Microsoft Office Online (an online version of Microsoft Office) for free."
+
+  },
+  {
+    "name": "Lenovo ThinkPad",
+    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/81/339846/1.jpg?5555",
+    "price": 17000,
+    
+    "available": true,
+   
+   "brand":"lenovo",
+   "os":"windows",
+   "disk":"hdd",
+   "ram":"4gb",
+   "description":"4gb RAM. 500GB hdd. Windows 10 operating system. Intel celeron. 3.53GHZ frequency. Perfect laptop for studies and business"
+
+  },
+  {
+    "name": "Hp Elitrebook 2 in 1",
+    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/62/153807/1.jpg?0212",
+    "price": 57000,
+    
+    "available": true,
+   
+   "brand":"hp",
+   "os":"windows",
+   "disk":"hdd",
+   "ram":"8gb",
+   "description":"TOUCHSCREEN ENABLED CHROMEBOOK  Elevate learning in and out of the classroom and empower students to think critically and work collaboratively with the HP Chromebook 11 EE. It is ready for class with interactive tools and a rugged design that includes co-molded rubber edges;It gets high marks for durabilityBe prepared for daily bumps and dings with co-molded rubber edges and a keyboard resistant to minor spills in a Chromebook™ that is designed to pass MIL-STD 810G testing.1Simplify deploymentsSpeed, simplicity, security, and easy sharing are core subjects for the Chrome OS™, a low-maintenance, highly-manageable platform with automatic software updates and virus protection."
+
+  },
+  {
+    "name": "Dell Latitude",
+    "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/86/768676/1.jpg?9910",
+    "price": 27000,
+    
+    "available": true,
+   
+   "brand":"dell",
+   "os":"windows",
+   "disk":"hdd",
+   "ram":"8gb",
+   "description":"Intel Core 17-4600U quad-core processor 2.2GHz Turbo frequency of 3.3GHz 14-inch, 1366*768 resolution pixel display Windows 10 Pro operating system Platinum Grey colour HB Webcam, Mini display port, USB 3.0, HDMI port 500GB HDD, 4GB RAM Conclusion Enhance your business performance with this Dell Latitude E7440 Ultrabook. It's sleek and attractive in design and made of a sturdy carbon fibre that gives it a soft touch. It is durable and comes with an ergonomic and comfortable keyboard. Additionally, it has great processing power, i7-4600U with, a 2.1GHz speed which, can be clocked up to 3.3GHz thanks to the Turbo Boost. It has a sufficient storage capacity of 500 HDD and a fast Ram of 8GB. It is readily available at our Nairobi Computer Shop, the best computer dealers in Nairobi at a favourable price."
+
   }
+
+
+
+  
+  
 ]
