@@ -40,9 +40,11 @@ const productsSchema= new mongoose.Schema(
            
         },
         disk:{
+            type:String,
             enum:["ssd","hdd"]
         },
         os:{
+            type:String,
             enum:["windows","mac","chrome"]
         }
 
